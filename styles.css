@@ -2,12 +2,22 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    /* align-items: center; */
 }
 /* background color*/
 .header, .start-section {
     background-color: #1F2937;
 }
 
+
+/* .header::before {
+    background-color: #1F2937;
+    content: "";
+    height: 100%;
+    z-index: -1;
+    left: -20vw;
+    width: 200vw;
+} */
 /* .header::before {
     background-color: #1F2937;
     content:"";
@@ -20,7 +30,6 @@ body {
     flex-direction: row;
     padding: 8px;
     justify-content: space-between;
-
     /* width: 80%; */
 }
 
@@ -45,13 +54,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 80px;
 }
 
 .description{
     display: flex;
     flex-direction: column;
-    text-align: left;
-    text-wrap: wrap;
+    flex-wrap: wrap;
+    width: 35%;
 }
 
 .description h1 {
@@ -71,4 +81,6 @@ body {
     background-color: #6d747d;
     justify-content: center;
     align-items: center;
+    width: 35%;
 }
+
