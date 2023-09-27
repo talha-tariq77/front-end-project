@@ -5,10 +5,11 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* align-items: center; */
 }
+
+/* p, h1, h3, button {
+    flex-shrink: 1;
+} */
 /* background color*/
-.header, .start-section {
-    background-color: #1F2937;
-}
 
 
 /* .header::before {
@@ -26,10 +27,17 @@ body {
     width: 100%;
 } */
 
+.wrapper {
+    background-color: #1F2937;
+}
+
 .header {
     display: flex;
+    width: 1100px;
+    margin: 8px auto;
+    
     flex-direction: row;
-    padding: 8px 400px;
+    /* padding: 8px 400px; */
     justify-content: space-between;
     /* width: 80%; */
 }
@@ -43,7 +51,7 @@ body {
 .header .links {
     display: flex;
     flex-direction: row;
-    gap:6px;
+    gap: 30px;
     font-size: 18px;
 }
 
@@ -56,15 +64,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 80px 200px;
+    /* padding: 80px 200px; */
+    width: 1100px;
+    margin: 80px auto;
+    gap: 40px;
 }
 
 .description{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 35%;
-    padding: 20px;
+    padding: 20px 0px;
+    width: 50%;
 }
 
 .description h1 {
@@ -96,19 +107,19 @@ body {
     background-color: #6d747d;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 50%;
     color: #F9FAF8;
 }
 
 .information-section {
-    align-self: center;
+    /* align-self: center; */
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0px 400px;
+    width: fit-content;    
+    margin: 60px auto 150px auto;
+    /* padding: 0px 400px; */
     gap: 70px;
-    margin-top: 50px;
-    margin-bottom: 150px;
 }
 
 .information-section h1 {
@@ -144,9 +155,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 400px;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    width: 950px;
+    /* padding: 0px 400px; */
+    /* padding: 150px 0 100px 0; */
+    margin: 150px auto 100px auto;
+}
+
+.wrapper2 {
     background-color: #E5E7EB;
 }
 
@@ -171,6 +186,7 @@ body {
     margin: 100px auto;
     width: 1200px;
     height: 200px;
+    border-radius: 10px;
     background-color: #3882F6;
     justify-content: space-around;
     align-items: center;
@@ -202,12 +218,17 @@ button {
     cursor:grab;
 }
 
-
-.footer {
+.wrapper3 {
     height: 100px;
     background-color: #1F2937;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 .footer p {
